@@ -63,6 +63,24 @@
 | Redability| Human and Machine | Machines Only|
 
 
-**[Note:]** MongoDB stores data in BSON format which makes it faster and more flexible.
+**[Note:]** MongoDB stores data in BSON format which makes it faster and more flexible and we can see it in JSON and this is tha magic!.
 <br>
+**Stored BSON and viewed JSON**
 
+#### Interacting with the Atlas cluster:
+- Export cluster data to a local machine.
+- Export to a different system.
+- Backup cloud data locally.
+- Import from a local machine.
+- Import from a different system.
+
+
+### Import and Export in MongoDB:
+- In JSON fromat (Human readable, slow):
+    - mongoimport command.
+    - mongoexport command.
+- In BSON format (Not human readable, fast):
+    - mongorestore command.
+    - mongodump command.
+
+![The way of exporting]("https://github.com/AhmedElgaidi/my-mongodb-university-notes/blob/main/public/1.png")

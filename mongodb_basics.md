@@ -64,4 +64,6 @@
 
 
 **[Note:]** MongoDB stores data in BSON format which makes it faster and more flexible.
-[BSON vs. JSON comparison from mongodb.com](https://www.mongodb.com/json-and-bson)
+<br>
+
+[BSON vs. JSON](https://www.mongodb.com/json-and-bson)

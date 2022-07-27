@@ -55,7 +55,7 @@
 - High performance.
 - General- purpose focus.
 
-#### JSON vs. BSON
+#### [BSON vs. JSON](https://www.mongodb.com/json-and-bson)
 |         |   JSON         |           BSON          |
 | :----:  | :------: | :----------:     |
 | Encoding | UTF-8 String | Binary |
@@ -66,4 +66,3 @@
 **[Note:]** MongoDB stores data in BSON format which makes it faster and more flexible.
 <br>
 
-[BSON vs. JSON](https://www.mongodb.com/json-and-bson)

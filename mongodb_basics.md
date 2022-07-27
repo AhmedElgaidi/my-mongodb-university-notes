@@ -59,3 +59,6 @@
 ------------------------------------------------
 |        JSON         |           BSON          |
 -------------------------------------------------
+|Encoding|UTF-8 String | Binary|
+| Data Support| String, Boolean, Number, Array| String, Boolean, Number(Integer, Float, Long, etc...), Array, Date, Raw Binary|
+| Redability| Human and Machine | Machines Only|

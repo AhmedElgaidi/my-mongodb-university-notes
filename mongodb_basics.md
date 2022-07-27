@@ -11,12 +11,12 @@
 
 #### What are MongoDB documents?
 - A way to organize and store the data as a set of field-value pairs.
-``
+```
     {
         <field>: <value>
         <field>: <value>
     }
-``
+```
 <br>
 
 **Note:** field: A unique identifier for datapoint, value: data related to a given identifier.
@@ -56,12 +56,8 @@
 - General- purpose focus.
 
 #### JSON vs. BSON
-------------------------------------------------
-|        JSON         |           BSON          |
--------------------------------------------------
+|     |   JSON         |           BSON          |
+ :----: | :------: | :----------:|
 | Encoding | UTF-8 String | Binar y|
-----------------------------------------------
 | Data Support| String, Boolean, Number, Array| String, Boolean, Number(Integer, Float, Long, etc...), Array, Date, Raw Binary|
--------------------------------------------------------------------
 | Redability| Human and Machine | Machines Only|
--------------------------------------------------------------

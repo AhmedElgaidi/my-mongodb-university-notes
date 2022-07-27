@@ -83,4 +83,4 @@
     - mongorestore command.
     - mongodump command.
 
-![The way of exporting]("https://github.com/AhmedElgaidi/my-mongodb-university-notes/blob/main/public/1.png")
+![The way of exporting]("https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/1.png")

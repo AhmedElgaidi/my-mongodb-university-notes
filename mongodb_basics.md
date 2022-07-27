@@ -84,4 +84,7 @@
     - mongodump command.
 
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/1.png"/> <br/>
-<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/2.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/2.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/3.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/4.png"/> <br/>
+

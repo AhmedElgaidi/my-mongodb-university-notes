@@ -83,4 +83,5 @@
     - mongorestore command.
     - mongodump command.
 
-<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/1.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/1.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/2.png"/>

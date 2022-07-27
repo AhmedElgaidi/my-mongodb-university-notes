@@ -45,3 +45,17 @@
     - Text-based (Text parsing is slow).
     - Space consuming.
     - Data types limitation.
+
+#### BSON (Binary JSON):
+- Fixed the drawback of JSON.
+- Optimized for:
+    - Speed.
+    - Space.
+    - Flexibility.
+- High performance.
+- General- purpose focus.
+
+#### JSON vs. BSON
+------------------------------------------------
+|        JSON         |           BSON          |
+-------------------------------------------------

@@ -110,11 +110,6 @@
 #### Deleting:
 <br/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/13.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/14.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/15.png"/> <br/>
 
-<br/>
-- We can delete a colletion in our database from command line such as: 
-
-<br/>
-```
-    db.collectionName.drop()
-```

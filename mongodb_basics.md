@@ -97,3 +97,11 @@
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/8.png"/> <br/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/9.png"/> <br/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/10.png"/> <br/>
+
+
+#### Updating:
+- updateOne(): It updates only the first document that matches the query.
+- updateMany(): Updates all docs that match the query.
+<br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/11.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/12.png"/> <br/>

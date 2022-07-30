@@ -91,4 +91,9 @@
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/5.png"/> <br/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/6.png"/> <br/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/7.png"/> <br/>
-<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/8.png"/> <br/>c
+
+#### _id field:
+<br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/8.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/9.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/10.png"/> <br/>

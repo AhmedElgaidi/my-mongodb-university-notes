@@ -113,6 +113,7 @@
 
 <br/>
 - We can delete a colletion in our database from command line such as: 
+
 ```
     db.collectionName.drop()
 ```

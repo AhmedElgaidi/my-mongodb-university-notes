@@ -68,7 +68,9 @@ So, in short:
 - Mongos will need this data to direct the query to the correcct shard, let's say the client want to get the document with the usrname "Suarez", it started with "S", then mongos direct the query directly to teh cluster that have documents with usernames starts with "s"
 - MongoDB offers high availability, so there may be different clients connecting to the mongose instances at the same time (and they just direct the query), of even absolute diffent application using our data set!!! just the smae logic
 **[Note]:** The metadata is not stored on the mongos!! It's stored in a config server, so once the client connect to mongos, mongos check metadata from the "config server" and according to the result direct to the correct shard
-<br/>
+
+
 **[Note]:** The config server is continously updated/ changed according to the data in the shards!!! But, why does it change in the first place? let's say we have big usernames starting with "S", so the shard number3 is really big and loaded and the shard 1,2 is not. The **config Server** decided which data should be moved => the metadata changed also to make room in the shard 3 for the users starting with "S"
-<br/>
+
+
 **[Note]:** During aggregation, let's say that the client wants to get all the users with age 28-30. We are sharding our database/ data set according to the username, right? So, how could this query be done? Mongos direct the query to each shard and merge the all returned docs from all shards to the client and that's actually what happens behins the seens on every query!!!

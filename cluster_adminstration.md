@@ -23,4 +23,29 @@
 So, in short:
 - Shards: Store distrubuted collections.
 - Config Server: Store metadata about each shard.
-- Mongos: Routes quieries to shards
+- Mongos: Routes queries to shards
+
+### When we should consider to shard?
+- We should shard if the Vertical scalling is no longer available (more CPU, RAM, DISK, Network).
+- we need to know that the Horizontal scalling is is cheaper than the Vertical scalling (The point is the Horizontal scalling is not environment friendly)
+- Another point to consider in Vertical scalling, is you increased the disk space to 15 Terabytes and you are using 75% of it, everything would be okay of saving new data and query data, etc... but the problem appears when making backups and using those backups later (Retrieving) or even when doing syncing with other replica sets **The more space the more time you need to backup/ retreive the data and the more consumpotion of newtwork bandwidth**
+
+**[Note]:** When the data set gets bigger, the indexes increase, The performance of querying decrease. So, we will need to increase our RAM to increase our processing performance **Increasing size of disks lead to increasing in the size of RAM! => More Cost and at some point the hardware would appear and the bottle neck appears too** That's why sharding (Horizontal Scalling) is usually the better solution!!!!
+
+- MongoDB reccommends that each server should have more thant 2 to 5 Terabytes of data!! if you need more, then scale horizontally!!
+
+
+- So **"Paralization"** is really good (The Horizontal scalling approach):
+- Backup
+- Restore
+- Sync among Replica set
+
+## Sharding Architecture:
+
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/3.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/4.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/5.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/6.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/7.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/8.png"/>
+

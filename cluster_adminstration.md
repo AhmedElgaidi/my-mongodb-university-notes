@@ -8,5 +8,8 @@
 - In order to ensure the viability of those pieces, we distrubute them into shared cluster (Group of servers)
 
 <br/>
-<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/1.png"/> <br/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/1.png"/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/2.png"/> <br/>
+
+- Now we have several servers with different shards (pieces) of data!!, how could we query??????????/
+-

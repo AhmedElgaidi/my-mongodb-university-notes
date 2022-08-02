@@ -81,7 +81,8 @@ During aggregation, let's say that the client wants to get all the users with ag
 ### Setting up a sharded cluster:
 
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/19.png"/>
-<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/20.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/20.png"/><br/>
+**[Note]:** The minimum requirments for settinup up a shard cluster is one cluster for data set and 1 cluster for CSRS(Config Server Replica Set) and one mongos instance, if we need more we create more and at this point we will have replica set of shard cluster, replica set of CSRS and multiple instances of mongos
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/21.png"/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/22.png"/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/23.png"/>

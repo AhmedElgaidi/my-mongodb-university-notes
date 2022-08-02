@@ -1,4 +1,4 @@
-b## Sharding:
+## Sharding:
 - Until now, It's super easy to store an entire data set on one server, but that's not got if this instance failed at some point!!
 - That's why they invented the term "Replica Set" which is actually a bunch of servery containing the same data set, it one failed the others do the work!!
 - When our application grows, the entire data set in each server grows and at this point we will have to increase the power of server hardware (Vertical scalling). But, at some point the hardware scalling can't increase more(There is limit, right?) and of course it's super expensive.
@@ -77,3 +77,18 @@ The config server is continously updated/ changed according to the data in the s
 
 **[Note]:**
 During aggregation, let's say that the client wants to get all the users with age 28-30. We are sharding our database/ data set according to the username, right? So, how could this query be done? Mongos direct the query to each shard and merge the all returned docs from all shards to the client and that's actually what happens behins the seens on every query!!!
+
+### Setting up a sharded cluster:
+
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/19.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/20.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/21.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/22.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/23.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/24.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/25.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/26.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/27.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/28.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/29.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/30.png"/><br/>

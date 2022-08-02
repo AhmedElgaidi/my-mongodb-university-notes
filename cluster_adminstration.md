@@ -1,4 +1,4 @@
-## Sharding:
+b## Sharding:
 - Until now, It's super easy to store an entire data set on one server, but that's not got if this instance failed at some point!!
 - That's why they invented the term "Replica Set" which is actually a bunch of servery containing the same data set, it one failed the others do the work!!
 - When our application grows, the entire data set in each server grows and at this point we will have to increase the power of server hardware (Vertical scalling). But, at some point the hardware scalling can't increase more(There is limit, right?) and of course it's super expensive.
@@ -48,4 +48,27 @@ So, in short:
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/6.png"/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/7.png"/>
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/8.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/9.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/10.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/11.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/12.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/13.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/14.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/15.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/16.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/17.png"/>
+<img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/18.png"/><br/>
 
+#### Explanation:
+- The most importnat info of the sharded cluster is we can add any number of shards we want, and because of this, the client application can't communicate directly with the shards, that's whwere the benifit of "mongos" appears.
+- A router process called "mongos" is established.
+- The client (browser, etc...) connect with the mongos, then the mongose direct the query to the appropriate shard.
+- But, how does mongose deliver the query to the correct shard?
+- Let's say we divied/ sharded our data set into 3 shards according to the username alphapet (It's like indexing, to help in searching | metadata). 
+- Mongos will need this data to direct the query to the correcct shard, let's say the client want to get the document with the usrname "Suarez", it started with "S", then mongos direct the query directly to teh cluster that have documents with usernames starts with "s"
+- MongoDB offers high availability, so there may be different clients connecting to the mongose instances at the same time (and they just direct the query), of even absolute diffent application using our data set!!! just the smae logic
+**[Note]:** The metadata is not stored on the mongos!! It's stored in a config server, so once the client connect to mongos, mongos check metadata from the "config server" and according to the result direct to the correct shard
+<br/>
+**[Note]:** The config server is continously updated/ changed according to the data in the shards!!! But, why does it change in the first place? let's say we have big usernames starting with "S", so the shard number3 is really big and loaded and the shard 1,2 is not. The **config Server** decided which data should be moved => the metadata changed also to make room in the shard 3 for the users starting with "S"
+<br/>
+**[Note]:** During aggregation, let's say that the client wants to get all the users with age 28-30. We are sharding our database/ data set according to the username, right? So, how could this query be done? Mongos direct the query to each shard and merge the all returned docs from all shards to the client and that's actually what happens behins the seens on every query!!!

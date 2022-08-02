@@ -12,4 +12,15 @@
 <img src="https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/2.png"/> <br/>
 
 - Now we have several servers with different shards (pieces) of data!!, how could we query??????????/
--
+- Here, MongoDB does some Router process to direct the query request to it's desired shared cluster to get docs.
+- That router process is called "Mongos", So the client connects to the mongos instead of connecting to each shard individually.
+- According to this we may have as many clients as we want to talk to "mongos" which redirects the client request to the appropiate shared cluster!!!
+- But, how mongos knows which request should be directed to that cluster?
+- Each shared cluster has a metadata and stored in a "config servers", But this metadata is used alot. So, we have to make it highly available, So how can we do that?
+- We use "Replication"!!!
+- MongoDB replicates the data on multiple config servers instead of one config server, "MongoDB deploys Config Server Replica Set"
+
+So, in short:
+- Shards: Store distrubuted collections.
+- Config Server: Store metadata about each shard.
+- Mongos: Routes quieries to shards

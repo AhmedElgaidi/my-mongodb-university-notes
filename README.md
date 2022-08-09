@@ -1,2 +1,2 @@
-# My MongoDB university notes
+# My Notes from MongoDB university
 

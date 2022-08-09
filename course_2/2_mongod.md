@@ -36,3 +36,18 @@
 
 ![test](https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/mongod/4.png)
 ![test](https://raw.githubusercontent.com/AhmedElgaidi/my-mongodb-university-notes/main/public/cluster_adminstration/mongod/5.png)
+
+
+## Some Default configuration for mongod:
+- port: 27017
+- dbpath: /data/db => this represents our data(collections, indexes, so the data can be persisent)
+- bind_ip: localhost => this means the only database clients that can connect to mongod are ones local to where mongod is runing. (We can configure other IPs for remote access!!)
+- auth: disabled => No auth at first!
+- 
+
+**Note:** We are using the mongo shell as our database client to connect to mongod!! By this shell we can interact with mongodb directly from terminal
+
+### MongoDB clients:
+- Mongo Shell.
+- MongodDB Compass. (A graphical user interface)
+- Drivers (NodeJS, Java, etc...). (Which provides APIs to connect to "mongod" in our application)
